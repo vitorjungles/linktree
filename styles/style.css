@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 header img {
@@ -20,6 +20,11 @@ header img {
 
 header span {
   font-size: larger;
+}
+
+#links {
+  display: grid;
+  justify-content: center;
 }
 
 .opacity-animation {
@@ -36,15 +41,12 @@ header span {
 
 a {
   text-decoration: none;
-  width: 2px;
-  background-color: bisque;
 }
 
 .box {
   text-align: start;
   padding: 1rem;
   width: 30vw;
-  margin: auto;
   margin-bottom: 2rem;
   border-radius: 1rem;
   transition: all 0.3s;
