@@ -32,10 +32,6 @@ header span {
   50% {
     opacity: 0;
   }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 a {
@@ -46,7 +42,7 @@ a {
 
 .box {
   text-align: start;
-  padding: 2rem;
+  padding: 1rem;
   width: 30vw;
   margin: auto;
   margin-bottom: 2rem;
@@ -74,8 +70,39 @@ span {
   line-height: 3rem;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    margin-top: 1rem;
+  }
+
+  header img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  *, header span {
+    font-size: medium;
+  }
+
+  header {
+    margin-top: 1rem;
+  }
+
+  header img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .box img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  * {
+  *, header span {
     font-size: small;
   }
 
@@ -86,5 +113,10 @@ span {
   header img {
     width: 8rem;
     height: 8rem;
+  }
+
+  .box img {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
