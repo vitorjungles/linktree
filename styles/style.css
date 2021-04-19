@@ -1,3 +1,90 @@
 * {
   text-align: center;
+  font-family: 'Zen Dots', cursive;
+  color: white;
+}
+
+body {
+  background: #1e272e;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+header img {
+  border-radius: 10rem;
+  border-width: 0.5rem;
+  border-style: solid;
+}
+
+header span {
+  font-size: larger;
+}
+
+.opacity-animation {
+  animation-name: opacity;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes opacity {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+  width: 2px;
+  background-color: bisque;
+}
+
+.box {
+  text-align: start;
+  padding: 2rem;
+  width: 30vw;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.box:hover {
+  filter: brightness(1.4);
+}
+
+.teal {
+  background: teal;
+}
+
+.purple {
+  background: rgb(156, 39, 156);
+}
+
+.blue {
+  background: rgb(56, 56, 158);
+}
+
+span {
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: small;
+  }
+
+  header {
+    margin-top: 1rem;
+  }
+
+  header img {
+    width: 8rem;
+    height: 8rem;
+  }
 }
