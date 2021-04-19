@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #1e272e;
+  background: #0d1013;
 }
 
 header {
@@ -14,17 +14,31 @@ header {
 
 header img {
   border-radius: 10rem;
-  border-width: 0.5rem;
+  border-width: 0.2rem;
   border-style: solid;
 }
 
-header span {
+.digits {
+  margin-top: auto;
   font-size: larger;
 }
 
 #links {
   display: grid;
   justify-content: center;
+}
+
+.box {
+  display: flex;
+}
+
+.box img {
+  height: 2rem;
+  margin: auto 0.5rem;
+}
+
+.box span {
+  line-height: 2rem;
 }
 
 .opacity-animation {
@@ -46,7 +60,7 @@ a {
 .box {
   text-align: start;
   padding: 1rem;
-  width: 30vw;
+  width: 20vw;
   margin-bottom: 2rem;
   border-radius: 1rem;
   transition: all 0.3s;
@@ -68,10 +82,6 @@ a {
   background: rgb(56, 56, 158);
 }
 
-span {
-  line-height: 3rem;
-}
-
 @media screen and (max-width: 1200px) {
   header {
     margin-top: 1rem;
@@ -84,12 +94,8 @@ span {
 }
 
 @media screen and (max-width: 800px) {
-  *, header span {
+  *, .digits {
     font-size: medium;
-  }
-
-  header {
-    margin-top: 1rem;
   }
 
   header img {
@@ -104,21 +110,23 @@ span {
 }
 
 @media screen and (max-width: 600px) {
-  *, header span {
+  *, .digits {
     font-size: small;
-  }
-
-  header {
-    margin-top: 1rem;
-  }
-
-  header img {
-    width: 8rem;
-    height: 8rem;
   }
 
   .box img {
     width: 1.5rem;
     height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .box {
+    width: auto;
+  }
+
+  .box img {
+    width: 1.3rem;
+    height: 1.3rem;
   }
 }

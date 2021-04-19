@@ -3,6 +3,8 @@ var Phrases = ['Front-end developer', 'Technology enthusiast', 'Programmer', 'Co
 var CurrentString = '';
 var PhrasesIndex = 0, CurrentStringIndex = 0;
 
+span.classList = 'digits';
+
 const DigitsAnimation = () => {
   CurrentString = Phrases[PhrasesIndex].split('');
   var FirstInterval = setInterval(function AddDigits() {
@@ -13,9 +15,9 @@ const DigitsAnimation = () => {
       clearInterval(FirstInterval);
       PhrasesIndex == Phrases.length - 1 ? PhrasesIndex = 0 : PhrasesIndex += 1;
       CurrentStringIndex = 0;
-      document.querySelectorAll('span')[1].classList = 'opacity-animation';
+      document.querySelectorAll('span')[1].classList = 'digits opacity-animation';
       setTimeout(function () {
-        document.querySelectorAll('span')[1].classList = 'normal-opacity';
+        document.querySelectorAll('span')[1].classList = 'digits normal-opacity';
         var SecondInterval = setInterval(function RemoveDigits() {
           if (span.textContent != '') {
             span.textContent = span.textContent.substring(0, span.textContent.length - 1);
