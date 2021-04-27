@@ -22,8 +22,9 @@ header img {
 }
 
 #links {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box {
@@ -54,7 +55,7 @@ a {
 }
 
 .box {
-  text-align: start;
+  justify-content: center;
   padding: 1rem;
   width: 20vw;
   margin-bottom: 2rem;
@@ -63,19 +64,19 @@ a {
 }
 
 .box:hover {
-  filter: brightness(1.4);
+  filter: brightness(1.2);
 }
 
 .teal {
-  background: teal;
+  background: rgb(17, 155, 155);
 }
 
 .purple {
-  background: rgb(156, 39, 156);
+  background: rgb(192, 25, 192);
 }
 
 .blue {
-  background: rgb(56, 56, 158);
+  background: rgb(47, 47, 182);
 }
 
 @media screen and (max-width: 1200px) {
