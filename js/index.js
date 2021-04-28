@@ -7,9 +7,8 @@ span.classList = 'digits';
 
 const digitsAnimation = () => {
   let firstInterval = setInterval(() => {
-    if (span.textContent != phrases[phrasesIndex]) {
-      span.textContent += phrases[phrasesIndex][currentStringIndex += 1];
-    } else {
+    span.textContent += phrases[phrasesIndex][currentStringIndex += 1];
+    if (span.textContent == phrases[phrasesIndex]) {
       clearInterval(firstInterval);
 
       phrasesIndex == phrases.length - 1 ? phrasesIndex = 0 : phrasesIndex += 1;
@@ -31,11 +30,11 @@ const digitsAnimation = () => {
         }, 100);
       }, 3000);
     };
-
-    if (document.querySelectorAll('span').length < 5) {
-      document.querySelector('span').before(span);
-    };
   }, 100);
+
+  if (document.querySelectorAll('span').length < 5) {
+    document.querySelector('span').before(span);
+  };
 };
 
 digitsAnimation();
