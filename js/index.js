@@ -12,7 +12,7 @@ const digitsAnimation = () => {
     if (span.textContent === phrases[phrasesIndex]) {
       clearInterval(firstInterval);
 
-      phrasesIndex === phrases.length - 1 ? phrasesIndex = 0 : phrasesIndex += 1;
+      phrasesIndex = phrasesIndex === phrases.length - 1 ? 0 : phrasesIndex + 1;
 
       currentStringIndex = -1;
 
