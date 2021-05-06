@@ -7,7 +7,7 @@ span.classList = 'digits';
 
 const digitsAnimation = () => {
   let firstInterval = setInterval(() => {
-    span.textContent += phrases[phrasesIndex][currentStringIndex += 1];
+    span.textContent = phrases[phrasesIndex].substring(0, currentStringIndex += 1);
     if (span.textContent == phrases[phrasesIndex]) {
       clearInterval(firstInterval);
 
