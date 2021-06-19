@@ -1,5 +1,9 @@
 const span = document.createElement('span');
+
+const fifthLink = document.querySelector('.fifth-link');
+
 const phrases = ['Front-end developer', 'Technology enthusiast', 'Programmer', 'Coffee'];
+const discordGamerTag = "und3fin3d#6351";
 
 let phrasesIndex = 0;
 let currentStringIndex = -1;
@@ -33,9 +37,13 @@ const digitsAnimation = () => {
     }
   }, 100);
 
-  if (document.querySelectorAll('span').length < 5) {
+  if (document.querySelectorAll('span').length < 7) {
     document.querySelector('span').before(span);
   }
 };
 
 digitsAnimation();
+
+fifthLink.addEventListener('click', () => {
+  navigator.clipboard.writeText(discordGamerTag);
+});
