@@ -68,7 +68,7 @@ a {
   padding: 0.5rem;
   width: 25vw;
   border-radius: 1rem;
-  transition: filter, scale, 0.3s;
+  transition: filter, transform, 0.3s;
 }
 
 .box:hover {
@@ -104,11 +104,11 @@ a {
 }
 
 .green {
-  background: rgb(21, 175, 137);
+  background: rgb(37, 131, 73);
 }
 
 .light-blue {
-  background: rgb(27, 149, 197);
+  background: rgb(22, 96, 146);
 }
 
 .dark-blue {
