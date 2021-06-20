@@ -17,10 +17,10 @@ const digitsAnimation = () => {
 
       currentStringIndex = -1;
 
-      document.querySelectorAll('span')[1].classList = 'digits opacity-animation';
+      document.querySelectorAll('span')[1].classList = 'cursor opacity-animation';
 
       setTimeout(() => {
-        document.querySelectorAll('span')[1].classList = 'digits normal-opacity';
+        document.querySelectorAll('span')[1].classList = 'cursor normal-opacity';
 
         const secondInterval = setInterval(() => {
           span.textContent = span.textContent.substring(0, span.textContent.length - 1);
