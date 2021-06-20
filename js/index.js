@@ -1,9 +1,6 @@
 const span = document.createElement('span');
 
-const fifthLink = document.querySelector('.fifth-link');
-
 const phrases = ['Front-end developer', 'Technology enthusiast', 'Programmer', 'Coffee'];
-const discordGamerTag = "und3fin3d#6351";
 
 let phrasesIndex = 0;
 let currentStringIndex = -1;
@@ -43,7 +40,3 @@ const digitsAnimation = () => {
 };
 
 digitsAnimation();
-
-fifthLink.addEventListener('click', () => {
-  navigator.clipboard.writeText(discordGamerTag);
-});

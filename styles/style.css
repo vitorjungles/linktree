@@ -89,10 +89,6 @@ a {
   animation: opacity 0.6s infinite;
 }
 
-.fifth-link {
-  cursor: pointer;
-}
-
 @keyframes opacity {
   50% {
     opacity: 0;
@@ -100,7 +96,7 @@ a {
 }
 
 .gray {
-  background: rgb(99, 115, 131);
+  background: rgb(74, 81, 87);
 }
 
 .green {
@@ -115,8 +111,8 @@ a {
   background: rgb(34, 77, 194);
 }
 
-.orange-gradient {
-  background: linear-gradient(225deg, orange, blue);
+.blue-gradient {
+  background: linear-gradient(225deg, blue, orange);
 }
 
 @media screen and (max-width: 1200px) {
